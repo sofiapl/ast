@@ -1,6 +1,6 @@
 package io.github.sofiapl.ast
 
-data class DeclarationParameter(
+data class ParameterDeclaration(
     val name: String?,
     val type: Type?,
     val initialValue: Expr?

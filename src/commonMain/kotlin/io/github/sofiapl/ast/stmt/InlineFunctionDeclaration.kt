@@ -6,9 +6,9 @@ data class InlineFunctionDeclaration(
     val annotations: List<Annotation>,
     val visibility: VisibilityModifier?,
     val modifiers: List<FunctionDeclaration.Modifier>,
-    val fictiveTypes: List<DeclarationFictiveType>?,
+    val fictiveTypes: List<FictiveTypeDeclaration>?,
     val name: String,
-    val parameters: List<DeclarationParameter>,
+    val parameters: List<ParameterDeclaration>,
     val returnType: Type?,
     val expr: Expr
 ): Stmt

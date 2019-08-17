@@ -1,6 +1,6 @@
 package io.github.sofiapl.ast
 
-data class DeclarationFictiveType(
+data class FictiveTypeDeclaration(
     val name: String,
     val upperBound: Type?,
     val restriction: Restriction?

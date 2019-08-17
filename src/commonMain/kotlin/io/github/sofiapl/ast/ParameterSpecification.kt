@@ -1,6 +1,6 @@
 package io.github.sofiapl.ast
 
-data class InvocationParameter(
+data class ParameterSpecification(
     val name: String?,
     val value: Expr
 ): Node

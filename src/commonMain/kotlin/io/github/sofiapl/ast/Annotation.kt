@@ -2,5 +2,5 @@ package io.github.sofiapl.ast
 
 data class Annotation(
     val type: Type,
-    val parameters: List<InvocationParameter>
+    val parameters: List<ParameterSpecification>
 ): Node

@@ -6,9 +6,9 @@ data class ClassDeclaration(
     val annotations: List<Annotation>,
     val visibility: VisibilityModifier?,
     val kind: Kind,
-    val fictiveTypes: List<DeclarationFictiveType>?,
+    val fictiveTypes: List<FictiveTypeDeclaration>?,
     val name: String,
-    val parameters: List<DeclarationParameter>?,
+    val parameters: List<ParameterDeclaration>?,
     val superClass: Type?,
     val interfaces: List<Type>
 ): Stmt {
