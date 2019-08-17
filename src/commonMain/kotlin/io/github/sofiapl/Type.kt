@@ -1,3 +1,6 @@
 package io.github.sofiapl
 
-abstract class Type: Node()
+data class Type(
+    val name: String,
+    val nullable: Boolean
+): Node()

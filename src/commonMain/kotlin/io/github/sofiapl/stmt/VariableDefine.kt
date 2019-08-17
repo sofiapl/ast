@@ -1,12 +1,10 @@
 package io.github.sofiapl.stmt
 
-import io.github.sofiapl.Annotation
-import io.github.sofiapl.Expr
-import io.github.sofiapl.Stmt
-import io.github.sofiapl.Type
+import io.github.sofiapl.*
 
 data class VariableDefine(
     val annotations: List<Annotation>,
+    val visibility: VisibilityModifier?,
     val name: String,
     val type: Type?,
     val initialValue: Expr?,
