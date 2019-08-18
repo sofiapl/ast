@@ -1,8 +1,8 @@
 package io.github.sofiapl.ast.expr
 
 import io.github.sofiapl.ast.Expr
-import io.github.sofiapl.ast.ParameterSpecification
 import io.github.sofiapl.ast.FictiveTypeSpecification
+import io.github.sofiapl.ast.ParameterSpecification
 
 data class Invoke(
     val expr: Expr,

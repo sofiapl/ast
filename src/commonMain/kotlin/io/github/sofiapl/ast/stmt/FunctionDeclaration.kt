@@ -10,7 +10,7 @@ data class FunctionDeclaration(
     val name: String,
     val parameters: List<ParameterDeclaration>,
     val returnType: Type?,
-    val body: List<Stmt>
+    val body: Expr
 ): Stmt {
 
     enum class Modifier {
