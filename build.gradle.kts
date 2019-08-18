@@ -1,5 +1,6 @@
 plugins {
     kotlin("multiplatform") version "1.3.41"
+    id("maven-publish")
 
     idea
 }
@@ -10,8 +11,6 @@ repositories {
 
 group = "io.github.sofiapl"
 version = "0.0.1"
-
-apply(plugin = "maven-publish")
 
 kotlin {
     jvm()
@@ -59,14 +58,14 @@ kotlin {
             }
         }
 
-        js().compilations["main"].defaultSourceSet {
+        js().compilations["test"].defaultSourceSet {
             dependencies {
                 implementation(kotlin("test-js"))
             }
         }
 
         linuxX64().compilations["main"].defaultSourceSet {}
-        linuxX64().compilations["main"].defaultSourceSet {}
+        linuxX64().compilations["test"].defaultSourceSet {}
     }
 }
 
