@@ -4,6 +4,7 @@ import io.github.sofiapl.ast.Expr
 import io.github.sofiapl.ast.FictiveTypeSpecification
 import io.github.sofiapl.ast.ParameterSpecification
 
+// <expr> ["<" <fictive types through ","> ">"] "(" <parameters through ","> ")"
 data class Invoke(
     val expr: Expr,
     val fictiveTypes: List<FictiveTypeSpecification>?,

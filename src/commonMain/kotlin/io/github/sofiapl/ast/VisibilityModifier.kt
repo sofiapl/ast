@@ -2,5 +2,12 @@ package io.github.sofiapl.ast
 
 enum class VisibilityModifier: Node {
 
-    PRIVATE, PROTECTED, PUBLIC
+    // "private"
+    PRIVATE,
+
+    // "protected"
+    PROTECTED,
+
+    // "public"
+    PUBLIC
 }
